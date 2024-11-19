@@ -1,53 +1,74 @@
-body,html{
+/* General Reset */
+body, html {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  height: 100%;
-  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1a1a2e;
+  color: #fff;
+  overflow-x: hidden;
 }
 
 /* Floating Welcome Banner */
 .floating-banner {
   position: fixed;
-  top: 20px;
+  top: 10px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #f9d342;
-  color: #000;
-  padding: 15px 30px;
-  border-radius: 30px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  animation: float 2s ease-in-out infinite;
+  background: #e94560;
+  padding: 10px 30px;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: bold;
+  animation: float 2s infinite ease-in-out;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Background Styling */
-body {
-  background: linear-gradient(to bottom right, #4facfe, #00f2fe);
+/* Hero Section */
+.hero-section {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   height: 100vh;
-  color: white;
+  background: linear-gradient(to bottom right, #0f3460, #16213e);
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+  color: #f9d342;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
 }
 
 /* About Section */
 .about-section {
-  max-width: 800px;
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.6);
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 50px 20px;
+  text-align: center;
+  background: #16213e;
+  border-top: 4px solid #e94560;
 }
 
-.about-section h1 {
-  margin: 0 0 15px;
-  font-size: 3em;
+.about-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #f9d342;
 }
 
 .about-section p {
-  font-size: 1.5em;
-  line-height: 1.6;
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
 }
 
 /* Floating Animation */
@@ -59,5 +80,3 @@ body {
     transform: translate(-50%, 10px);
   }
 }
-
-
